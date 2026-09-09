@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冒险party-组队探险活动与户外聚会一站式指南</title>
+    <meta name="description" content="冒险party是集户外探险、主题聚会、团队游戏于一体的综合活动平台。提供活动策划、路线推荐、装备指南与组队交流，助你开启精彩冒险之旅。">
+    <meta name="keywords" content="冒险party,冒险派对,户外探险,主题聚会,组队活动,团建游戏,探险路线">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+            background: #f4f7f6;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #0f4c3a, #1a6b4a);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .logo-icon {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        .logo-text {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 1.8rem;
+        }
+        .main-nav a {
+            color: #e0f2e9;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover {
+            border-bottom-color: #f7b731;
+            color: #fff;
+        }
+        .header-cta {
+            background: #f7b731;
+            color: #1a3a2e;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: 0.2s;
+        }
+        .header-cta:hover {
+            background: #ffcc4d;
+            transform: scale(1.03);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(120deg, #123b2e, #2f6b50);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "⚑";
+            font-size: 12rem;
+            opacity: 0.08;
+            position: absolute;
+            right: 5%;
+            top: 10%;
+            transform: rotate(20deg);
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 750px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.92;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .btn-light {
+            background: #ffffff;
+            color: #1a4a38;
+        }
+        .btn-light:hover {
+            background: #eee;
+            transform: translateY(-3px);
+        }
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-3px);
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Quick Features */
+        .features-strip {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: -2.5rem auto 2rem;
+            padding: 0 1.5rem;
+            max-width: 1200px;
+            position: relative;
+            z-index: 5;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.8rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            border-top: 4px solid #2e8b6b;
+        }
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+        .feature-icon {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+        }
+        .feature-card h3 {
+            color: #1f4a3a;
+            margin-bottom: 0.4rem;
+        }
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #5a6e66;
+        }
+
+        /* Section titles */
+        .section {
+            padding: 3rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: #1f4a3a;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: #f7b731;
+            border-radius: 4px;
+        }
+        .section-title p {
+            color: #5f6e68;
+            margin-top: 0.8rem;
+        }
+
+        /* Activity Grid */
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .activity-item {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+        .activity-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .activity-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .activity-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .activity-info {
+            padding: 1.5rem;
+        }
+        .activity-info h3 {
+            color: #1f4a3a;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .activity-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #718078;
+            margin-top: 0.8rem;
+        }
+        .activity-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .activity-desc {
+            color: #4a5a52;
+            font-size: 0.95rem;
+            margin-top: 0.6rem;
+        }
+        .activity-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #1d8a5e;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .activity-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Route List */
+        .route-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .route-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 1.8rem;
+            border-left: 6px solid #2e8b6b;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .route-card h3 {
+            color: #1f4a3a;
+            margin-bottom: 0.5rem;
+        }
+        .route-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #5a6e66;
+        }
+        .route-difficulty {
+            background: #e8f5ef;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            color: #1d8a5e;
+            font-weight: 600;
+        }
+
+        /* Gear Guide */
+        .gear-section {
+            background: #eaf3ef;
+            padding: 3rem 0;
+        }
+        .gear-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.8rem;
+        }
+        .gear-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+        .gear-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .gear-card h3 {
+            color: #1f4a3a;
+            margin-bottom: 0.8rem;
+        }
+        .gear-card p {
+            color: #4a5a52;
+            font-size: 0.95rem;
+        }
+
+        /* Community / Team up */
+        .teamup {
+            background: linear-gradient(135deg, #1a5c44, #2d7a5c);
+            color: #fff;
+            padding: 3.5rem 0;
+        }
+        .teamup-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .teamup-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .teamup-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        .teamup-text p {
+            opacity: 0.95;
+            max-width: 550px;
+        }
+        .teamup-stats {
+            display: flex;
+            gap: 2.5rem;
+            text-align: center;
+        }
+        .teamup-stats .stat-num {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #f7b731;
+        }
+        .teamup-stats .stat-label {
+            opacity: 0.85;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        .faq-question {
+            font-weight: 700;
+            color: #1f4a3a;
+            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .faq-question::before {
+            content: "Q";
+            background: #2e8b6b;
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .faq-answer {
+            color: #4a5a52;
+            padding-left: 2.2rem;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #1e2d28;
+            color: #c0d4cc;
+            padding: 2.5rem 2rem 1.5rem;
+            margin-top: 2rem;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-col a:hover {
+            color: #f7b731;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2.5rem;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .site-header {
+                padding: 1rem;
+            }
+            .main-nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .hero {
+                padding: 3.5rem 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .features-strip {
+                margin-top: -1.5rem;
+            }
+            .teamup-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .teamup-stats {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="logo-area">
+        <span class="logo-icon">🏕️</span>
+        <span class="logo-text">冒险party</span>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">探险活动</a></li>
+            <li><a href="#">主题路线</a></li>
+            <li><a href="#">组队广场</a></li>
+            <li><a href="#">装备指南</a></li>
+        </ul>
+    </nav>
+    <a href="#" class="header-cta">发起冒险</a>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>冒险party，让每一次组队都精彩</h1>
+    <p>无论是山林徒步、城市寻宝，还是趣味团建、露营篝火——在这里，找到同频的伙伴，策划一场难忘的冒险派对。</p>
+    <div class="hero-buttons">
+        <a href="#" class="btn btn-light">探索活动</a>
+        <a href="#" class="btn btn-outline">如何加入</a>
+    </div>
+</section>
+
+<!-- Features -->
+<div class="features-strip">
+    <div class="feature-card">
+        <div class="feature-icon">🧭</div>
+        <h3>精选路线</h3>
+        <p>专业团队实地踩线的成熟冒险路线</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>快速组队</h3>
+        <p>同城玩家即时匹配，组队不再困难</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">🎲</div>
+        <h3>多样玩法</h3>
+        <p>从密室逃脱到野外生存，总有新奇体验</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>安全保障</h3>
+        <p>领队认证与行前培训，安全始终第一</p>
+    </div>
+</div>
+
+<!-- Popular Activities -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>热门冒险活动</h2>
+            <p>近期玩家最爱的冒险party项目，点击查看详情</p>
+        </div>
+        <div class="activity-grid">
+            <div class="activity-item">
+                <div class="activity-img" style="background-image: linear-gradient(145deg, #3a7d5c, #1f4a3a);">
+                    <span class="activity-tag">🔥 本周热门</span>
+                </div>
+                <div class="activity-info">
+                    <h3>山谷徒步穿越</h3>
+                    <p class="activity-desc">全程8km原生态山路，包含溪流段与观景平台，适合中级玩家。</p>
+                    <div class="activity-meta">
+                        <span>👥 12人成团</span>
+                        <span>⭐ 4.8分</span>
+                    </div>
+                    <a href="#" class="activity-link">查看详情 →</a>
+                </div>
+            </div>
+            <div class="activity-item">
+                <div class="activity-img" style="background-image: linear-gradient(145deg, #2c5f6e, #14344a);">
+                    <span class="activity-tag">🌙 夜探系列</span>
+                </div>
+                <div class="activity-info">
+                    <h3>城市夜幕寻宝</h3>
+                    <p class="activity-desc">夜晚的街道藏着线索，团队协作解开谜题，发现城市另一面。</p>
+                    <div class="activity-meta">
+                        <span>👥 6-8人组队</span>
+                        <span>⭐ 4.9分</span>
+                    </div>
+                    <a href="#" class="activity-link">查看详情 →</a>
+                </div>
+            </div>
+            <div class="activity-item">
+                <div class="activity-img" style="background-image: linear-gradient(145deg, #8b5e2c, #5a3a14);">
+                    <span class="activity-tag">🏕️ 露营派对</span>
+                </div>
+                <div class="activity-info">
+                    <h3>湖畔星空露营</h3>
+                    <p class="activity-desc">两天一夜精致露营，含篝火晚会与户外电影，新手友好。</p>
+                    <div class="activity-meta">
+                        <span>👥 20人上限</span>
+                        <span>⭐ 4.7分</span>
+                    </div>
+                    <a href="#" class="activity-link">查看详情 →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Routes -->
+<section class="section" style="background: #f0f5f2;">
+    <div class="container">
+        <div class="section-title">
+            <h2>精选冒险路线</h2>
+            <p>按难度与主题分类，找到适合你的那条路</p>
+        </div>
+        <div class="route-list">
+            <div class="route-card">
+                <h3>🌿 丛林初级探索</h3>
+                <p>适合第一次参加冒险party的新人，平坦步道加上自然讲解，全程约3小时。</p>
+                <div class="route-info">
+                    <span class="route-difficulty">⭐ 入门</span>
+                    <span>距离：5km</span>
+                </div>
+            </div>
+            <div class="route-card">
+                <h3>⛰️ 山脊进阶挑战</h3>
+                <p>有连续爬升路段及两处绳降点，适合有运动基础的玩家，风景绝佳。</p>
+                <div class="route-info">
+                    <span class="route-difficulty">⭐⭐ 进阶</span>
+                    <span>距离：12km</span>
+                </div>
+            </div>
+            <div class="route-card">
+                <h3>🏞️ 溪谷溯溪穿越</h3>
+                <p>夏季限定路线，需要涉水攀石，配备专业防水装备，体验清凉刺激。</p>
+                <div class="route-info">
+                    <span class="route-difficulty">⭐⭐⭐ 挑战</span>
+                    <span>距离：7km</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gear Guide -->
+<section class="gear-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>冒险装备指南</h2>
+            <p>出发前，看看这些必备物品你备齐了吗？</p>
+        </div>
+        <div class="gear-grid">
+            <div class="gear-card">
+                <div class="gear-icon">🎒</div>
+                <h3>背包选择</h3>
+                <p>短途活动建议20-30L，过夜露营需要45L以上，注意腰带与背负系统。</p>
+            </div>
+            <div class="gear-card">
+                <div class="gear-icon">👟</div>
+                <h3>鞋履建议</h3>
+                <p>徒步鞋需防滑防水，建议比日常大半码。新鞋务必提前磨合一周。</p>
+            </div>
+            <div class="gear-card">
+                <div class="gear-icon">🧥</div>
+                <h3>衣物分层</h3>
+                <p>采用三层穿衣法：排汗层、保暖层、防护层。避免纯棉贴身衣物。</p>
+            </div>
+            <div class="gear-card">
+                <div class="gear-icon">💡</div>
+                <h3>照明与工具</h3>
+                <p>头灯解放双手，备用电池必备。多功能刀具与急救包也别忘了。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Up -->
+<section class="teamup">
+    <div class="container">
+        <div class="teamup-content">
+            <div class="teamup-text">
+                <h2>找不到队友？来组队广场</h2>
+                <p>冒险party的核心是伙伴。在组队广场发布你的冒险计划，或加入别人的邀约。同城玩家、兴趣社群、周末拼团，这里都有。</p>
+            </div>
+            <div class="teamup-stats">
+                <div>
+                    <div class="stat-num">3000+</div>
+                    <div class="stat-label">注册冒险者</div>
+                </div>
+                <div>
+                    <div class="stat-num">150+</div>
+                    <div class="stat-label">每周组队活动</div>
+                </div>
+                <div>
+                    <div class="stat-num">98%</div>
+                    <div class="stat-label">活动好评率</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>冒险party常见问题</h2>
+            <p>第一次参加？答案都在这里</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">完全没有户外经验，可以参加冒险party吗？</div>
+                <div class="faq-answer">完全可以。我们的活动明确标注了难度等级，入门级活动有领队全程陪同并提供基础教学。建议从初级路线开始，积累经验后再挑战更高难度。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">参加活动需要自备哪些装备？</div>
+                <div class="faq-answer">基础装备（如徒步鞋、背包、水壶）需要自备，活动页会列出详细清单。专业装备如安全带、头盔、绳索等由活动方统一提供，无需个人购买。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">如果临时有事，可以取消报名吗？</div>
+                <div class="faq-answer">活动开始前48小时可免费取消，24-48小时内取消收取30%费用，24小时内取消恕不退款。遇到极端天气等不可抗力，活动会延期或全额退款。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">可以自己发起一个冒险party吗？</div>
+                <div class="faq-answer">当然可以！注册用户即可发起活动，填写路线、时间与人数要求。若你想成为认证领队，需要提交相关资质证明并通过审核。</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>冒险party</h4>
+            <p style="max-width: 280px;">让每一次出发都有意义，让每一个周末都有期待。加入我们，开启你的冒险故事。</p>
+        </div>
+        <div class="footer-col">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">探险活动</a></li>
+                <li><a href="#">主题路线</a></li>
+                <li><a href="#">装备商城</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>帮助支持</h4>
+            <ul>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">领队认证</a></li>
+                <li><a href="#">保险说明</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>关注我们</h4>
+            <ul>
+                <li><a href="#">微信公众号</a></li>
+                <li><a href="#">小红书</a></li>
+                <li><a href="#">抖音</a></li>
+                <li><a href="#">B站</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 冒险party 版权所有 | 每一次探险都值得被认真对待</p>
+    </div>
+</footer>
+
+</body>
+          </html>

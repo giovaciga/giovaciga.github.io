@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都财税代理公司-专业企业财税服务与工商注册代办平台</title>
+    <meta name="description" content="花都财税代理公司专注于为广州花都及周边企业提供代理记账、工商注册、税务筹划、资质代办等一站式财税服务。资深会计团队，价格透明，为企业合规经营保驾护航。">
+    <meta name="keywords" content="花都财税代理公司,花都代理记账,花都工商注册,花都税务筹划,广州花都财税服务,公司注册代办">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* 顶部信息栏 */
+        .top-bar {
+            background-color: #1a3a5c;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9rem;
+            padding: 8px 0;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-bar .contact-info span {
+            margin-right: 25px;
+        }
+        .top-bar .slogan {
+            letter-spacing: 1px;
+        }
+
+        /* 页眉主体 */
+        .header-main {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+        .header-main .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(145deg, #2a6f97, #1a4a6e);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 4px 8px rgba(26, 74, 110, 0.2);
+        }
+        .brand h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a3a5c;
+            line-height: 1.2;
+        }
+        .brand .sub-title {
+            font-size: 0.85rem;
+            color: #6c8ca0;
+            letter-spacing: 2px;
+        }
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header-cta .hotline {
+            text-align: right;
+        }
+        .header-cta .hotline .label {
+            font-size: 0.8rem;
+            color: #7f8c9b;
+            display: block;
+        }
+        .header-cta .hotline .num {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #e67e22;
+            letter-spacing: 1px;
+        }
+        .btn-primary {
+            background-color: #e67e22;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            border: 2px solid #2a6f97;
+            color: #2a6f97;
+            padding: 8px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: transparent;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background-color: #2a6f97;
+            color: #fff;
+        }
+
+        /* 导航 */
+        .nav-bar {
+            background-color: #1a3a5c;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-links {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .nav-links li a {
+            color: rgba(255, 255, 255, 0.9);
+            padding: 14px 20px;
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 4px 4px 0 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-links li a:hover, .nav-links li a.active {
+            background-color: #fff;
+            color: #1a3a5c;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #eef4f9 0%, #d8e6f0 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-content h2 {
+            font-size: 2.4rem;
+            color: #1a3a5c;
+            line-height: 1.3;
+            margin-bottom: 18px;
+            font-weight: 800;
+        }
+        .hero-content h2 span {
+            color: #e67e22;
+            border-bottom: 4px solid #e67e22;
+            padding-bottom: 2px;
+        }
+        .hero-content p {
+            font-size: 1.15rem;
+            color: #4a6275;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 18px;
+            border-radius: 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+        .hero-feature-item .icon {
+            font-size: 1.5rem;
+        }
+        .hero-badge {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            border: 1px solid #e8f0f5;
+        }
+        .hero-badge .big-num {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1a3a5c;
+            line-height: 1.2;
+        }
+        .hero-badge .stat-label {
+            color: #6c8ca0;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        .hero-badge .service-list {
+            text-align: left;
+            margin-top: 20px;
+            border-top: 1px solid #eef2f6;
+            padding-top: 15px;
+        }
+        .hero-badge .service-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 0;
+            font-size: 0.95rem;
+            color: #3d566e;
+        }
+        .hero-badge .service-list li .check {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* 服务板块 */
+        .section-padding {
+            padding: 70px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h3 {
+            font-size: 2rem;
+            color: #1a3a5c;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: #7f8c9b;
+            font-size: 1rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #f0f4f8;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+        }
+        .service-card .icon-wrap {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .icon-bg-1 { background: linear-gradient(135deg, #2a6f97, #4a9bc7); }
+        .icon-bg-2 { background: linear-gradient(135deg, #e67e22, #f39c12); }
+        .icon-bg-3 { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+        .icon-bg-4 { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
+        .service-card h4 {
+            font-size: 1.3rem;
+            color: #1a3a5c;
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            color: #5d6f7e;
+            font-size: 0.95rem;
+        }
+
+        /* 优势板块 */
+        .advantages-section {
+            background-color: #eef4f9;
+        }
+        .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .adv-item {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            border-left: 5px solid #2a6f97;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+        }
+        .adv-item .adv-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+        .adv-item h5 {
+            font-size: 1.2rem;
+            color: #1a3a5c;
+            margin-bottom: 10px;
+        }
+        .adv-item p {
+            color: #5d6f7e;
+            font-size: 0.95rem;
+        }
+
+        /* 流程板块 */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .step-item {
+            text-align: center;
+            position: relative;
+        }
+        .step-item .step-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid #2a6f97;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2a6f97;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(42, 111, 151, 0.1);
+        }
+        .step-item h5 {
+            font-size: 1.1rem;
+            color: #1a3a5c;
+            margin-bottom: 8px;
+        }
+        .step-item p {
+            font-size: 0.9rem;
+            color: #6c8ca0;
+        }
+        .step-item::after {
+            content: "→";
+            position: absolute;
+            right: -20px;
+            top: 30px;
+            font-size: 1.5rem;
+            color: #b0c4d8;
+        }
+        .step-item:last-child::after {
+            display: none;
+        }
+
+        /* 资讯板块 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .news-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+            border: 1px solid #eef2f6;
+            transition: transform 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-4px);
+        }
+        .news-card .news-placeholder {
+            height: 180px;
+            background: linear-gradient(145deg, #d8e6f0, #b8d4e8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #2a6f97;
+        }
+        .news-card .news-body {
+            padding: 25px;
+        }
+        .news-card .news-tag {
+            display: inline-block;
+            background-color: #eaf2f8;
+            color: #2a6f97;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .news-card h5 {
+            font-size: 1.2rem;
+            color: #1a3a5c;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .news-card p {
+            color: #5d6f7e;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f0f4f8;
+        }
+        .faq-item h5 {
+            font-size: 1.1rem;
+            color: #1a3a5c;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .faq-item h5::before {
+            content: "Q";
+            background-color: #e67e22;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .faq-item p {
+            color: #4a6275;
+            padding-left: 38px;
+            font-size: 0.95rem;
+        }
+
+        /* 联系板块 */
+        .contact-section {
+            background-color: #1a3a5c;
+            color: #fff;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .contact-info-block h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .contact-info-block p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .contact-detail .icon {
+            font-size: 1.8rem;
+        }
+        .contact-detail .info .label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .contact-detail .info .value {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .contact-form {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            color: #2c3e50;
+        }
+        .contact-form h4 {
+            font-size: 1.4rem;
+            color: #1a3a5c;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #4a6275;
+            font-size: 0.95rem;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #dce5ec;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none;
+            border-color: #2a6f97;
+        }
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        /* 页脚 */
+        .footer {
+            background-color: #122a40;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 40px 0 20px;
+            font-size: 0.9rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer h5 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .footer p {
+            max-width: 300px;
+        }
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+        .footer ul li a:hover {
+            color: #e67e22;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero .container {
+                grid-template-columns: 1fr;
+            }
+            .process-steps {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+            .step-item::after {
+                display: none;
+            }
+            .adv-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .top-bar .slogan {
+                display: none;
+            }
+            .header-main .container {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .header-cta {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .header-cta .hotline {
+                text-align: center;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+            .nav-links li a {
+                padding: 12px 14px;
+                font-size: 0.95rem;
+            }
+            .hero {
+                padding: 40px 0;
+            }
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+            .services-grid, .adv-grid, .news-grid, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+            .section-padding {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部信息栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span>📍 广州市花都区迎宾大道</span>
+                <span>🕒 周一至周六 9:00-18:00</span>
+            </div>
+            <div class="slogan">专注花都企业财税服务，让您的经营更省心</div>
+        </div>
+    </div>
+
+    <!-- 页眉 -->
+    <header class="header-main">
+        <div class="container">
+            <div class="brand">
+                <div class="logo-icon">财</div>
+                <div>
+                    <h1>花都财税代理公司</h1>
+                    <div class="sub-title">一站式企业财税服务平台</div>
+                </div>
+            </div>
+            <div class="header-cta">
+                <div class="hotline">
+                    <span class="label">服务热线</span>
+                    <span class="num">400-800-6688</span>
+                </div>
+                <a href="#contact" class="btn-primary">免费获取方案</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#services">服务项目</a></li>
+                <li><a href="#advantages">核心优势</a></li>
+                <li><a href="#process">服务流程</a></li>
+                <li><a href="#news">财税资讯</a></li>
+                <li><a href="#faq">常见问题</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 首屏 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>花都企业信赖的<br><span>财税服务伙伴</span></h2>
+                <p>我们深耕花都本地市场，为中小企业提供代理记账、工商注册、税务筹划等全方位服务。资深会计团队，熟悉花都区最新财税政策，帮助企业降低经营成本、规避税务风险。</p>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <span class="icon">✅</span>
+                        <span>正规资质</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <span class="icon">💰</span>
+                        <span>价格透明</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <span class="icon">🔒</span>
+                        <span>信息保密</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-primary" style="padding: 12px 36px; font-size: 1.1rem;">立即咨询</a>
+            </div>
+            <div class="hero-badge">
+                <div class="big-num">15+</div>
+                <div class="stat-label">年行业服务经验</div>
+                <div style="display: flex; justify-content: space-around; margin: 20px 0;">
+                    <div>
+                        <div class="big-num" style="font-size: 2rem;">2000+</div>
+                        <div class="stat-label">服务企业客户</div>
+                    </div>
+                    <div>
+                        <div class="big-num" style="font-size: 2rem;">98%</div>
+                        <div class="stat-label">客户满意度</div>
+                    </div>
+                </div>
+                <ul class="service-list">
+                    <li><span class="check">✔</span> 代理记账 · 每月按时报税</li>
+                    <li><span class="check">✔</span> 工商注册 · 快速下证</li>
+                    <li><span class="check">✔</span> 税务筹划 · 合法节税</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section class="section-padding" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h3>我们的核心服务</h3>
+                <p>覆盖企业全生命周期的财税需求，让您专注业务发展</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-wrap icon-bg-1">📊</div>
+                    <h4>代理记账</h4>
+                    <p>专业会计团队负责日常账务处理、凭证审核、财务报表编制、纳税申报，确保企业账目清晰合规，每月按时完成各项税务申报。</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrap icon-bg-2">🏢</div>
+                    <h4>工商注册</h4>
+                    <p>提供公司注册、变更、注销、年检等一条龙服务。熟悉花都区工商办理流程，快至3天拿证，让您的创业之路顺畅起步。</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrap icon-bg-3">📈</div>
+                    <h4>税务筹划</h4>
+                    <p>根据企业实际经营情况，量身定制合法合规的税务优化方案，合理利用税收优惠政策，有效降低企业整体税负成本。</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrap icon-bg-4">📋</div>
+                    <h4>资质代办</h4>
+                    <p>协助办理食品经营许可证、道路运输许可证、进出口权、高新企业认定等各类行业资质，帮助企业快速获得经营许可。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="section-padding advantages-section" id="advantages">
+        <div class="container">
+            <div class="section-title">
+                <h3>为什么选择我们？</h3>
+                <p>以专业服务赢得口碑，以责任担当换取信任</p>
+            </div>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <div class="adv-num">01</div>
+                    <h5>资深会计团队</h5>
+                    <p>团队成员均具备中级以上会计职称，平均从业经验超过8年，精通各行业财税处理，能够应对复杂的财务问题。</p>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">02</div>
+                    <h5>本地政策熟悉</h5>
+                    <p>扎根花都市场多年，对花都区及各街道的税收征管要求、工商登记细则有深入了解，能为企业争取最有利的政策支持。</p>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">03</div>
+                    <h5>专属顾问服务</h5>
+                    <p>每位客户配备专属财税顾问，提供一对一服务。遇到问题随时响应，定期推送最新财税政策解读，让您始终掌握最新动态。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="section-padding" id="process">
+        <div class="container">
+            <div class="section-title">
+                <h3>合作流程</h3>
+                <p>简单四步，轻松开启合作</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-circle">1</div>
+                    <h5>需求沟通</h5>
+                    <p>了解您的业务模式和具体需求</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle">2</div>
+                    <h5>方案定制</h5>
+                    <p>制定个性化财税服务方案</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle">3</div>
+                    <h5>签约合作</h5>
+                    <p>签订正式服务合同，建立专属档案</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle">4</div>
+                    <h5>专业服务</h5>
+                    <p>会计团队开始提供日常财税服务</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle">5</div>
+                    <h5>持续优化</h5>
+                    <p>定期汇报，持续优化财税策略</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 财税资讯 -->
+    <section class="section-padding" id="news" style="background-color: #eef4f9;">
+        <div class="container">
+            <div class="section-title">
+                <h3>财税资讯动态</h3>
+                <p>了解最新政策，把握经营先机</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-placeholder">📰</div>
+                    <div class="news-body">
+                        <span class="news-tag">政策解读</span>
+                        <h5>2025年小微企业税收优惠政策要点梳理</h5>
+                        <p>新一年度多项税收优惠政策延续执行，本文为您梳理与花都小微企业密切相关的政策要点，帮助企业及时享受优惠。</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-placeholder">💡</div>
+                    <div class="news-body">
+                        <span class="news-tag">实操指南</span>
+                        <h5>花都区新注册企业首次报税注意事项</h5>
+                        <p>新成立的企业在首次申报纳税时容易忽略哪些细节？本文结合花都区税务部门要求，为您整理首次报税注意事项清单。</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-placeholder">⚖️</div>
+                    <div class="news-body">
+                        <span class="news-tag">风险提示</span>
+                        <h5>企业税务风险自查：避免常见违规操作</h5>
+                        <p>发票管理、工资薪金申报、成本费用列支……哪些环节容易引发税务风险？建议企业定期开展税务自查，防患于未然。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h3>常见问题解答</h3>
+                <p>我们整理了客户最关心的问题，希望能帮到您</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h5>代理记账一般需要提供哪些材料？</h5>
+                    <p>通常需要提供营业执照副本复印件、法人及股东身份证复印件、银行回单及对账单、日常经营票据（收入、成本、费用发票）、员工工资表等。具体清单我们会在签约后提供详细指引。</p>
+                </div>
+                <div class="faq-item">
+                    <h5>公司注册大概需要多长时间？</h5>
+                    <p>在资料齐全的情况下，花都区工商注册一般需要3-5个工作日左右。我们会提前帮您预审资料，确保流程顺利进行，减少往返奔波。</p>
+                </div>
+                <div class="faq-item">
+                    <h5>小规模纳税人和一般纳税人有什么区别？</h5>
+                    <p>主要区别在于税率、进项抵扣和申报方式不同。小规模纳税人通常适用简易计税方法，一般纳税人可进行进项税额抵扣。具体选择哪种身份需要根据您的业务规模、客户要求等综合判断，我们可以为您提供专业建议。</p>
+                </div>
+                <div class="faq-item">
+                    <h5>你们的服务费用如何收取？</h5>
+                    <p>服务费用根据企业规模、业务复杂程度、服务内容等因素综合确定。我们承诺价格透明，无任何隐形收费，签订合同后严格按照约定收费。您可以联系我们获取详细报价。</p>
+                </div>
+                <div class="faq-item">
+                    <h5>合作后如何保障我公司的财务信息安全？</h5>
+                    <p>我们与所有客户签订保密协议，建立严格的内部管理制度，会计人员均签署保密承诺。同时采用专业财务软件进行账务处理，数据多重备份，全面保障企业财务信息安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="section-padding contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-block">
+                    <h3>立即联系我们</h3>
+                    <p>无论是咨询财税问题，还是了解服务方案，我们都热忱欢迎您的来电或留言。一个电话，让专业团队为您排忧解难。</p>
+                    <div class="contact-detail">
+                        <span class="icon">📞</span>
+                        <div class="info">
+                            <div class="label">咨询热线</div>
+                            <div class="value">400-800-6688</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="icon">📱</span>
+                        <div class="info">
+                            <div class="label">手机/微信</div>
+                            <div class="value">138-0000-0000</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="icon">📍</span>
+                        <div class="info">
+                            <div class="label">公司地址</div>
+                            <div class="value">广州市花都区迎宾大道66号商务中心8楼</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h4>免费获取财税服务方案</h4>
+                    <div class="form-group">
+                        <label>您的称呼</label>
+                        <input type="text" placeholder="请输入您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <label>联系电话</label>
+                        <input type="tel" placeholder="请输入手机号码">
+                    </div>
+                    <div class="form-group">
+                        <label>服务需求</label>
+                        <select>
+                            <option value="">请选择需要的服务</option>
+                            <option value="1">代理记账</option>
+                            <option value="2">工商注册</option>
+                            <option value="3">税务筹划</option>
+                            <option value="4">资质代办</option>
+                            <option value="5">其他咨询</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>补充说明</label>
+                        <textarea placeholder="简要描述您的需求 (选填)"></textarea>
+                    </div>
+                    <button class="btn-primary" style="width: 100%; text-align: center;">提交咨询，快速响应</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>花都财税代理公司</h5>
+                    <p>专业提供代理记账、工商注册、税务筹划等一站式企业财税服务。我们以专业、诚信、高效为服务理念，助力花都企业健康发展。</p>
+                </div>
+                <div>
+                    <h5>快速导航</h5>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#services">服务项目</a></li>
+                        <li><a href="#advantages">核心优势</a></li>
+                        <li><a href="#process">服务流程</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>服务项目</h5>
+                    <ul>
+                        <li><a href="#services">代理记账</a></li>
+                        <li><a href="#services">工商注册</a></li>
+                        <li><a href="#services">税务筹划</a></li>
+                        <li><a href="#services">资质代办</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>联系方式</h5>
+                    <ul>
+                        <li>📞 400-800-6688</li>
+                        <li>📱 138-0000-0000</li>
+                        <li>📧 service@huaducaishui.com</li>
+                        <li>📍 广州市花都区迎宾大道66号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 花都财税代理公司 版权所有 | 粤ICP备00000000号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
